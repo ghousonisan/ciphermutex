@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    scrollbar-width: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url(../assets/underMaintenaceImg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(3px);      
+    -webkit-backdrop-filter: blur(3px);
+}
+.header{
+    height: 5rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF99;
+    backdrop-filter: blur(20px);      
+    -webkit-backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+}
+.headerWrapper{
+    width: 84%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: block;
+    width: 132.91px;
+    height: 60px;
+    overflow: hidden;
+    background-image: url(../assets/CX\ Logo-1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.headerWrapper section{
+        width: 35rem;
+        display: flex;
+        justify-content: space-around;
+        background: none;
+}
+.header section a{
+        display: block;
+        text-decoration: none;
+        color: #08043A;
+        background: none;
+}
+.errorContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.errorContainer h1{
+    font-size: 100px;
+    padding-top: 3rem;
+}
+.errorContainer h2{
+    font-size: 50px;
+    color: rgba(245, 245, 245, 1);
+}
