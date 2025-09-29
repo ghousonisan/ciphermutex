@@ -5,22 +5,335 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CiphermuteX</title>
     <link rel="icon" type="image/x-icon" href="../assets/cx final-01.jpg">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="aboutUs.css">
 </head>
 <body>
     <div class="header">
         <div class="headerWrapper">
-            <a href="#" class="logo"></a>
+            <a href="../index.html" class="logo"></a>
+            <img src="../assets/Hamburger Menu.svg" alt="Menu" id="hamburger" onclick="displayLinks('headerMobileViewLinks')">
             <section>
-                <a href="#">Home</a>
-                <a href="/503error/error.html">About Us</a>
-                <a href="/503error/error.html">Our Servies</a>
-                <a href="/503error/error.html">Reviews</a>
-                <a href="/503error/error.html">Contact Us</a>
+                <a href="../index.html">Home</a>
+                <a href="#" style="text-decoration: underline;color: #08043A; font-weight: 500;">About Us</a>
+                <div class="dropdown">
+                    <button>Our services</button>
+                    <div class="dropdownList">
+                        <a href="../service/webDevelopment.html">Web Development</a>
+                        <a href="../service/appDevelopment.html">App Development</a>
+                        <a href="../service/uxDesign.html">UI/UX Design</a>
+                        <a href="../service/graphicDesign.html">Graphic Design</a>
+                        <a href="../service/digitalMarketing.html">Digital Marketing</a>
+                        <a href="../service/aiAutomation.html">AI Automation</a>
+                        <a href="../service/whatsappCRM.html">WhatsApp (CRM & AI)</a>
+                    </div>
+                </div>
+                <a href="../contact/contactUs.html">Contact Us</a>
             </section>
         </div>
+         <div class="headerMobileViewLinks" id="menu">
+            <h4 onclick="window.location.href='../index.html'">Home</h4>
+            <h4 onclick="window.location.href='../about/aboutUs.html'">About Us</h4>
+            <h4 onclick="displayLinks('serviceLink1')">Our Services</h4>
+                <a href="../service/webDevelopment.html" class="serviceLink1">Web Development</a>
+                <a href="../service/appDevelopment.html" class="serviceLink1">App Development</a>
+                <a href="../service/uxDesign.html" class="serviceLink1">UI/UX Design</a>
+                <a href="../service/graphicDesign.html" class="serviceLink1">Graphic Design</a>
+                <a href="../service/digitalMarketing.html" class="serviceLink1">Digital Marketing</a>
+                <a href="../service/aiAutomation.html" class="serviceLink1">AI Automation</a>
+                <a href="../service/whatsappCRM.html" class="serviceLink1">WhatsApp CRM</a>
+            <h4 onclick="window.location.href='../contact/contactUs.html'">Contact Us</h4>
+        </div>
+    </div>
+    <div class="welcomeContainer">
+        <div class="welcomeWrapper">
+            <div class="welcomeContent">
+                <h2 data-aos="fade-right" data-aos-duration="2000">We</h2>
+                <h2 data-aos="fade-right" data-aos-duration="2000">Make Your</h2>
+                <h3 data-aos="fade-right" data-aos-duration="2800"><span>Business</span> Better</h3>
+                <div class="underline"></div>
+                <img data-aos="zoom-in" data-aos-duration="2000" src="../assets/aboutUsWelcomeImg.png" alt="" class="welcomeImgMobileView">
+                <p>Cipher MuteX is your partner in digital transformation. We blend creativity, technology, and strategy to provide solutions in App and Web Development, UI/UX Design, AI Automation, SEO, and Marketing. Whether you're a small business or a global brand, we empower you to seize new opportunities and grow confidently.</p>
+            </div>
+            <img data-aos="zoom-in" data-aos-duration="2000" src="../assets/aboutUsWelcomeImg.png" alt="" class="welcomeImgDesktopView">
+        </div>
+    </div>
+    <div class="WhoWeAreContainer">
+        <div class="WhoWeAreWrapper">
+            <img data-aos="fade-right" data-aos-duration="800" src="../assets/aboutUsWhoWeAre.png" alt="" class="WhoWeAreDesktopView">
+            <div class="WhoWeAreContent">
+                <h2>WHO WE ARE</h2>
+                <h3>Driven by Passion. <br>Defined by Innovation. <br>Focused on You.</h3>
+                <img src="../assets/aboutUsWhoWeAre.png" alt="" class="WhoWeAreMobileView">
+                <p>Cipher MuteX is a team of passionate innovators, designers, and developers committed to building digital products that drive results. Our mission is simple: to empower businesses with customised technology solutions that transform challenges into opportunities.</p>
+            </div>
+        </div>
+    </div>
+    <div class="servicesContainer">
+        <div class="servicesWrapper">
+            <h2>WHAT WE DO</h2>
+            <p>We specialise in end-to-end services:</p>
+            <div class="servicesCardContainer">
+                <div class="servicesCard1" onclick="location.href='../service/webDevelopment.html'">
+                    <div class="servicesCardImgWarpper1">
+                        <img src="../assets/internetIcon.svg" alt="">
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>From modern websites to powerful web apps—we craft digital platforms that perform and convert.<br>&nbsp;</p>
+                    <button>Know More <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+                <div class="servicesCard2" onclick="location.href='../service/appDevelopment.html'">
+                    <div class="servicesCardImgWarpper2">
+                        <img src="../assets/mobileIcon.svg" alt="">
+                    </div>
+                    <h3>App Development</h3>
+                    <p>Build secure, scalable, and user-friendly mobile apps that deliver seamless experiences across iOS & Android.<br>&nbsp;</p>
+                    <button>Know More <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+                <div class="servicesCard1" onclick="location.href='../service/uxDesign.html'">
+                    <div class="servicesCardImgWarpper1">
+                        <img src="../assets/windowIcon.svg" alt="">
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Designs that aren’t just beautiful, but purposeful. We create interfaces that engage, delight, and retain users.<br>&nbsp;</p>
+                    <button>Know More <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+                <div class="servicesCard2" onclick="location.href='../service/graphicDesign.html'">
+                    <div class="servicesCardImgWarpper2">
+                        <img src="../assets/brushIcon.svg" alt="">
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Logos, brand identities, and creative assets that make your brand unforgettable.,<br>&nbsp;<br>&nbsp;</p>
+                    <button>Know More <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+                <div class="servicesCard2" onclick="location.href='../service/digitalMarketing.html'">
+                    <div class="servicesCardImgWarpper2">
+                        <img src="../assets/marketingIcon.svg" alt="">
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Boost your online presence with strategies that drive traffic, leads, and conversions.<br>&nbsp;<br>&nbsp;</p>
+                    <button>Know More <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+                <div class="servicesCard1" onclick="location.href='../service/aiAutomation.html'">
+                    <div class="servicesCardImgWarpper1">
+                        <img src="../assets/aiIcon.svg" alt="">
+                    </div>
+                    <h3>AI Automation</h3>
+                    <p>Automate workflows, enhance productivity, and future-proof your business with smart AI solutions.<br>&nbsp;</p>
+                    <button>Know More <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+                <div class="servicesCard2" onclick="location.href='/service/'">
+                    <div class="servicesCardImgWarpper2">
+                        <img src="../assets/seoIcon.svg" alt="">
+                    </div>
+                    <h3>SEO Optimisation</h3>
+                    <p>Rank higher, attract organic traffic, and stay ahead in search results with tailored SEO strategies.<br>&nbsp;</p>
+                    <button>Know More <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+                <div class="servicesCard1" onclick="location.href='../service/whatsappCRM.html'">
+                    <div class="servicesCardImgWarpper1">
+                        <img src="../assets/whatsappCRMIcon.svg" alt="">
+                    </div>
+                    <h3>WhatsApp CRM</h3>
+                    <p>Simplify customer interactions with a robust CRM solution integrated into WhatsApp—fast, efficient, and easy to manage.</p>
+                    <button>Know More <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+            <p>Unlike agencies that push ready-made packages, we deliver customised solutions tailored to your unique needs—because no two businesses are the same.</p>
+        </div>
+    </div>
+    <div class="ourVisionContainer">
+        <div class="ourVisionWrapper">
+            <div data-aos="fade-right" data-aos-duration="800" class="ourVisionContentWrapper">
+                <div class="ourVisionContent">
+                    <h2>OUR VISION</h2>
+                    <h3>Empowering businesses to unlock limitless possibilities through technology.</h3>
+                    <p>To become a trusted partner for businesses worldwide by delivering technology that inspires growth, drives change, and creates impact.</p>
+                    <img data-aos="fade-right" data-aos-duration="1800" src="../assets/aboutUsVisionImg.png" alt="" class="ourVisionImgMobileView">
+                    <h2>OUR MISSION</h2>
+                    <h3>Delivering innovative, scalable, and reliable digital solutions that fuel growth.</h3>
+                    <p>To simplify digital transformation for businesses of all sizes by providing customised, innovative, and reliable solutions that fuel growth, improve efficiency, and create lasting value.</p>
+                </div>
+                <img data-aos="fade-right" data-aos-duration="1800" src="../assets/aboutUsVisionImg.png" alt="" class="ourVisionImgDesktopView">
+            </div>
+            <h2 data-aos="fade-right" data-aos-duration="800">OUR PHILOSOPHY</h2>
+            <h3 data-aos="fade-right" data-aos-duration="800">Innovation with purpose, collaboration with trust, and results that matter.</h3>
+            <p data-aos="fade-right" data-aos-duration="800">We don't just build websites or apps. We build digital ecosystems that grow with you. For us, technology is not just about coding; it's about solving problems, unlocking opportunities, and creating experiences that matter.</p>
+        </div>
+    </div>
+    <div class="ourProcessContainer">
+        <div class="ourProcessWrapper">
+            <h2>OUR PROCESS</h2>
+            <p>Customised digital solutions for every business stage</p>
+            <div class="ourProcessCardContainer1">
+                <div class="ourProcessCard1">
+                    <img src="../assets/searchIcon.svg" alt="">
+                    <h3>Discover</h3>
+                    <P>We start by understanding your business, challenges, and goals to craft the right solution.</P>
+                </div>
+                <div class="ourProcessCard1">
+                    <img src="../assets/planIcon.svg" alt="">
+                    <h3>Plan</h3>
+                    <p>Our team defines the strategy, timeline, and roadmap tailored to your needs.</p>
+                </div>
+                <div class="ourProcessCard1">
+                    <img src="../assets/designWhiteIcon.svg" alt="">
+                    <h3>Design</h3>
+                    <p>From wireframes to stunning interfaces, we focus on creating user friendly experiences.</p>
+                </div>
+                <div class="ourProcessCard1">
+                    <img src="../assets/developIcon.svg" alt="">
+                    <h3>Develop</h3>
+                    <p>Our developers bring the designs to life with clean, scalable, and secure code.</p>
+                </div>
+            </div>
+            <div class="ourProcessCardContainer2">
+                <div class="ourProcessCard2">
+                    <img src="../assets/settingIcon.svg" alt="">
+                    <h3>Test & Refine</h3>
+                    <p>Every product is tested rigorously to ensure flawless performance and quality.</p>
+                </div>
+                <div class="ourProcessCard2">
+                    <img src="../assets/startUpWhiteIcon.svg" alt="">
+                    <h3>Launch</h3>
+                    <p>We deploy your solution and ensure a smooth go-live experience.</p>
+                </div>
+                <div class="ourProcessCard2">
+                    <img src="../assets/growthIcon.svg" alt="">
+                    <h3>Support & Grow</h3>
+                    <p>Post-launch, we provide ongoing support and improvements to help your business scale.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="whyUsContainer">
+        <div class="whyUsWrapper">
+            <h2>WHY CHOOSE US</h2>
+            <p>Your Growth Partner in the Digital World</p>
+            <div class="whyUsCardContainer">
+                <div class="whyUsCard">
+                    <img src="../assets/startUpIcon.svg" alt="">
+                    <h3>Future-Ready Approach</h3>
+                    <p>From AI automation to smart web platforms—we design with tomorrow in mind.</p>
+                </div>
+                <div class="whyUsCard">
+                    <img src="../assets/resultsIcon.svg" alt="">
+                    <h3>Results That Matter</h3>
+                    <p>We focus on outcomes, not just outputs. Our goal is to drive real growth for your business.</p>
+                </div>
+                <div class="whyUsCard">
+                    <img src="../assets/reliableIcon.svg" alt="">
+                    <h3>Scalable & Reliable</h3>
+                    <p>Whether you’re a startup or an enterprise, our solutions grow with your business.</p>
+                </div>
+                <div class="whyUsCard">
+                    <img src="../assets/customisedSolutionsIcon.svg" alt="">
+                    <h3> Customised Solutions</h3>
+                    <p>We don’t believe in one-size-fits-all. Every solution is tailored to your unique business needs.</p>
+                </div>
+                <div class="whyUsCard">
+                    <img src="../assets/clientCentricProcessIcon.svg" alt="">
+                    <h3>Client-Centric Process</h3>
+                    <p>Your success is our success. We listen, understand, and work alongside you at every step.</p>
+                </div>
+                <div class="whyUsCard">
+                    <img src="../assets/endToEndExpertiseIcon.svg" alt="">
+                    <h3>End-to-End Expertise</h3>
+                    <p>From development to design, marketing to automation—you get everything under one roof.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerTableContainer">
+            <div class="footerSocialMediaContainer">
+                <img src="../assets/CXLogoWhiteBg.svg" alt="" onclick="location.href='../index.html'">
+                <p>Building the future of businesses with customised digital solutions.</p>
+                <div class="footerSocialMediaIconContainer">
+                    <img src="../assets/facebookImg.svg" alt="" onclick="window.open('https\://www.facebook.com/share/1CFURKW7MF/?mibextid=wwXIfr','_blank')">
+                    <img src="../assets/instaImg.svg" alt="" onclick="window.open('https\://www.instagram.com/ciphermutex?igsh=eXV5b2d4Y21hODU1&utm_source=qr', '_blank')">
+                    <img src="../assets/xImg.svg" alt="" onclick="window.open('https\://x.com/ciphermutex?s=21', '_blank')">
+                    <img src="../assets/linkedInImg.svg" alt="" onclick="window.open('https\://www.linkedin.com/in/cipher-mutex-475395383?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', '_blank')">
+                </div>
+            </div>
+            <div class="footerLinksMobileView">
+                <h4 onclick="displayLinks('quickLink')">Quick Links</h4>
+                <a href="../index.html" class="quickLink">Home</a>
+                <a href="../about/aboutUs.html" class="quickLink">About Us</a>
+                <a href="../contact/contactUs.html" class="quickLink">Contact Us</a>
+
+                <h4 onclick="displayLinks('serviceLink')">Our Services</h4>
+                <a href="../service/webDevelopment.html" class="serviceLink">Web Development</a>
+                <a href="../service/appDevelopment.html" class="serviceLink">App Development</a>
+                <a href="../service/uxDesign.html" class="serviceLink">UI/UX Design</a>
+                <a href="../service/graphicDesign.html" class="serviceLink">Graphic Design</a>
+                <a href="../service/digitalMarketing.html" class="serviceLink">Digital Marketing</a>
+                <a href="../service/aiAutomation.html" class="serviceLink">AI Automation</a>
+                <a href="../service/whatsappCRM.html" class="serviceLink">WhatsApp CRM</a>
+
+                <h4 onclick="displayLinks('legalLink')">Legal</h4>
+                <a href="../Legal/privacyPolicy.html" class="legalLink">Privacy Policy</a>
+                <a href="../legal/termsOfService.html" class="legalLink">Terms of Service</a>
+
+                <div class="footerSocialMediaIconContainer">
+                    <img src="../assets/facebookImg.svg" alt="" onclick="window.open('https\://www.facebook.com/share/1CFURKW7MF/?mibextid=wwXIfr','_blank')">
+                    <img src="../assets/instaImg.svg" alt="" onclick="window.open('https\://www.instagram.com/ciphermutex?igsh=eXV5b2d4Y21hODU1&utm_source=qr', '_blank')">
+                    <img src="../assets/xImg.svg" alt="" onclick="window.open('https\://x.com/ciphermutex?s=21', '_blank')">
+                    <img src="../assets/linkedInImg.svg" alt="" onclick="window.open('https\://www.linkedin.com/in/cipher-mutex-475395383?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', '_blank')">
+                </div>
+            </div>
+            <table class="footerTableDesktopView">
+                <tr>
+                    <th>Quick Links</th>
+                    <th>Our Services</th>
+                    <th>Legal</th>
+                </tr>
+                <tr>
+                    <td onclick="location.href='../index.html'">Home</td>
+                    <td onclick="location.href='../service/webDevelopment.html'">Web Development</td>
+                    <td onclick="location.href='../legal/privacyPolicy.html'">Privacy Policy</td>
+                </tr>
+                <tr>
+                    <td onclick="location.href='../about/aboutUs.html'">About Us</td>
+                    <td onclick="location.href='../service/appDevelopment.html'">App Development</td>
+                    <td onclick="location.href='../legal/termsOfService.html'">Terms of Service</td>
+                </tr>
+                <tr>
+                    <td onclick="location.href='../contact/contactUs.html'">Contact Us</td>
+                    <td onclick="location.href='../service/uxDesign.html'">UI/UX Design</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td onclick="location.href='../service/graphicDesign.html'">Graphic Design</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td onclick="location.href='../service/digitalMarketing.html'">Digital Marketing</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td onclick="location.href='../service/aiAutomation.html'">AI Automation</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td onclick="location.href='../service/whatsappCRM.html'">WhatsApp CRM</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <p>© 2025 Cipher MuteX. All Rights Reserved. | Crafted with ❤️ by Cipher MuteX Team</p>
     </div>
 
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     <script src="aboutUs.js"></script>
 </body>
 </html>

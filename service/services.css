@@ -1,0 +1,932 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scrollbar-width: none;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+body{
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 1);
+    font-size: clamp(12px, 2vw, 16px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .header{
+    height: 5rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+}
+.headerWrapper{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: block;
+    width: 132.91px;
+    height: 60px;
+    overflow: hidden;
+    background-image: url(../assets/CX\ Logo-1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.headerWrapper section{
+        width: 25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: none;
+}
+.header section a{
+        display: block;
+        text-decoration: none;
+        color: #6e6e6e;
+        background: none;
+        text-underline-offset: 50%;
+        transition: transform .2s;
+}
+.header section > a:hover{
+    transform: scale(1.1);
+    color: #2e2e2e;
+}
+.dropdown button{
+    border: none;
+    background: none;
+    color: #6e6e6e;
+    text-underline-offset: 50%;
+    cursor: pointer;
+    padding: 1.7rem 0.5rem;
+    font-size: inherit;
+    transition: transform .2s;
+}
+.dropdown:hover button{
+    transform: scale(1.1);
+    color: #2e2e2e;
+}
+.dropdown .dropdownList a{
+    display: block;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    background: none;
+    padding: 0.3rem 1.5rem;
+    transform: none;
+}
+.dropdown .dropdownList{
+    display: none;
+    position: absolute;
+    top: 4rem;
+    padding: 0.75rem 0;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 1px 0 #000000;
+    min-width: 10rem;
+    background-color: #FFFFFF;
+    line-height: 2rem;
+}
+.dropdown:hover .dropdownList{
+    display: block;
+}
+.dropdownList a:hover{
+    color: rgba(0, 0, 0, 1);
+    background-color: #DDDDDD;
+}
+
+.titleContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleWrapper{
+    width: 100%;
+    min-height: 22.5rem;
+    background-image: url(../assets/Service\ Banner\ 2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.titleWrapper h1{
+    color: rgba(255, 255, 255, 1);
+    margin-left: 15%;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.descriptionContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.descriptionWrapper{
+    width: 80rem;
+    margin: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.descriptionWrapper img{
+    width: 36.25rem;
+    height: 41.5rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 1rem 0 black;
+    object-fit: cover;
+}
+.contentWrapper{
+    width: 36.25rem;
+    height: 41.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contentWrapper h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(46, 46, 46, 1);
+}
+.contentWrapper h2{
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(142, 142, 142, 1);
+}
+.contentWrapper h3{
+    padding: 1rem 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: rgba(46, 46, 46, 1);
+}
+.contentWrapper p{
+    font-weight: 400;
+    color: rgba(162, 162, 162, 1);
+}
+.contentWrapper li{
+    color: rgba(162, 162, 162, 1);
+    padding: 0.3rem;
+    margin-left: 2rem;
+}
+.contentWrapper li::marker{
+    font-size: 0.75rem;
+}
+
+.ourProcessContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.ourProcessWrapper{
+    width: 80rem;
+    margin: 4rem 0;
+}
+.ourProcessWrapper h2{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: rgba(8, 4, 58, 1);
+}
+.ourProcessCardContainer1{
+    margin: 3rem 0 2.5rem 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    row-gap: 2rem;
+}
+.ourProcessCard1{
+    border: 1.5px solid rgba(2, 166, 220, 1);
+    border-radius: 1.25rem;
+    background-color: rgba(2, 166, 220, 0.1);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.ourProcessCardContainer2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ourProcessCardContainer2Wrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    gap: 2rem;
+    row-gap: 2rem;
+}
+.ourProcessCard2{
+    border: 1.5px solid rgba(2, 166, 220, 1);
+    border-radius: 1.25rem;
+    background-color: rgba(2, 166, 220, 0.1);
+    width: 100%;
+    min-height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.ourProcessCard1 h3, .ourProcessCard2 h3{
+    background-color: rgba(2, 166, 220, 0.2);
+    color: rgba(2, 166, 220, 1);
+    font-weight: 700;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 1.25rem;
+}
+.ourProcessCard1 p, .ourProcessCard2 p{
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+}
+
+.ourProcesssCardWrapper {
+    perspective: 1000px;
+    width: 25rem;
+    min-height: 10rem;
+}
+
+.ourProcessCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.ourProcesssCardWrapper:hover .ourProcessCardInner {
+    transform: rotateX(180deg); 
+}
+
+.ourProcessCardFront, 
+.ourProcessCardBack {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.ourProcessCardBack {
+    transform: rotateX(180deg);
+}
+.ourProcessWrapper button{
+    height: 2.5rem;
+    border: none;
+    text-align: left;
+    color: rgba(2, 166, 220, 1);
+    padding: 2rem 0;
+    font-size: 1rem;
+    background: none;
+    cursor: pointer;
+}
+.ourProcessWrapper button i{
+    color: rgba(2, 166, 220, 1);
+}
+
+.footer{
+    width: 100%;
+    background-color: rgba(8, 4, 58, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer hr{
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(62, 62, 62, 1);
+}
+.footer p{
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    margin: 2rem 0;
+}
+.footerTableContainer{
+    width: 80rem;
+    min-height: 18.625rem;
+    height: auto;
+    margin: 3% 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footerSocialMediaContainer{
+    width: 16.563rem;
+}
+.footerSocialMediaContainer img{
+    width: 9.875rem;
+    height: 4.5rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+.footerSocialMediaContainer p{
+    font-weight: 400;
+    margin: 1rem 0 3rem 0;
+    color: rgba(238, 238, 238, 1);
+    max-width: 16.563rem;
+}
+.footerSocialMediaIconContainer img{
+    width: 2rem;
+    height: 2rem;
+    border: 0.25rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+.footerTableContainer table{
+    min-width: 39.813rem;
+}
+.footerTableContainer table th{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+}
+.footerTableContainer table td{
+    font-weight: 400;
+    color: rgba(162, 162, 162, 1);
+    text-align: left;
+    padding-left: 0.75rem;
+    cursor: pointer;
+}
+.footerTableContainer table td:hover{
+    color: #eeeeee;
+} */
+
+/* ================================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scrollbar-width: none;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+body{
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 1);
+    font-size: clamp(12px, 2vw, 16px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .header{
+    height: 5rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+}
+.headerWrapper > img{
+    display: none;
+}
+.headerMobileViewLinks{
+    display: none;
+}
+.headerMobileViewLinks.show{
+    display: block;
+}
+
+.serviceLink1.show{
+    display: block;
+}
+.headerWrapper{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: block;
+    width: 132.91px;
+    height: 60px;
+    overflow: hidden;
+    background-image: url(../assets/CX\ Logo-1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.headerWrapper section{
+        width: 25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: none;
+}
+.header section a{
+        display: block;
+        text-decoration: none;
+        color: #6e6e6e;
+        background: none;
+        text-underline-offset: 50%;
+        transition: transform .2s;
+}
+.header section > a:hover{
+    transform: scale(1.1);
+    color: #2e2e2e;
+}
+.dropdown button{
+    border: none;
+    background: none;
+    color: #6e6e6e;
+    text-underline-offset: 50%;
+    cursor: pointer;
+    padding: 1.7rem 0.5rem;
+    font-size: inherit;
+    transition: transform .2s;
+}
+.dropdown:hover button{
+    transform: scale(1.1);
+    color: #2e2e2e;
+}
+.dropdown .dropdownList a{
+    display: block;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    background: none;
+    padding: 0.3rem 1.5rem;
+    transform: none;
+}
+.dropdown .dropdownList{
+    display: none;
+    position: absolute;
+    top: 4rem;
+    padding: 0.75rem 0;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 1px 0 #000000;
+    min-width: 10rem;
+    background-color: #FFFFFF;
+    line-height: 2rem;
+}
+.dropdown:hover .dropdownList{
+    display: block;
+}
+.dropdownList a:hover{
+    color: rgba(0, 0, 0, 1);
+    background-color: #DDDDDD;
+}
+
+.titleContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleWrapper{
+    width: 100%;
+    min-height: 22.5rem;
+    background-image: url(../assets/Service\ Banner\ 2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.titleWrapper h1{
+    color: rgba(255, 255, 255, 1);
+    margin-left: 15%;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.descriptionContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.descriptionWrapper{
+    width: 80rem;
+    margin: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.descriptionWrapper > img{
+    width: 36.25rem;
+    height: 41.5rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 1rem 0 black;
+    object-fit: cover;
+}
+.contentWrapper{
+    width: 36.25rem;
+    height: 41.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contentWrapper h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(46, 46, 46, 1);
+}
+.contentWrapper h2{
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(142, 142, 142, 1);
+}
+.contentWrapper h3{
+    padding: 1rem 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: rgba(46, 46, 46, 1);
+}
+.contentWrapper p{
+    font-weight: 400;
+    color: rgba(162, 162, 162, 1);
+}
+.contentWrapper li{
+    color: rgba(162, 162, 162, 1);
+    padding: 0.3rem;
+    margin-left: 2rem;
+}
+.contentWrapper li::marker{
+    font-size: 0.75rem;
+}
+.serviceWelcomeImgMobileView{
+    display: none;
+}
+
+.ourProcessContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.ourProcessWrapper{
+    width: 80rem;
+    margin: 4rem 0;
+}
+.ourProcessWrapper h2{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: rgba(8, 4, 58, 1);
+}
+.ourProcessCardContainer1{
+    margin: 3rem 0 2.5rem 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    row-gap: 2rem;
+}
+.ourProcessCard1{
+    border: 1.5px solid rgba(2, 166, 220, 1);
+    border-radius: 1.25rem;
+    background-color: rgba(2, 166, 220, 0.1);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.ourProcessCardContainer2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ourProcessCardContainer2Wrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    gap: 2rem;
+    row-gap: 2rem;
+}
+.ourProcessCard2{
+    border: 1.5px solid rgba(2, 166, 220, 1);
+    border-radius: 1.25rem;
+    background-color: rgba(2, 166, 220, 0.1);
+    width: 100%;
+    min-height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.ourProcessCard1 h3, .ourProcessCard2 h3{
+    background-color: rgba(2, 166, 220, 0.2);
+    color: rgba(2, 166, 220, 1);
+    font-weight: 700;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 1.25rem;
+}
+.ourProcessCard1 p, .ourProcessCard2 p{
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+}
+
+.ourProcesssCardWrapper {
+    perspective: 1000px;
+    width: 25rem;
+    min-height: 10rem;
+}
+
+.ourProcessCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.ourProcesssCardWrapper:hover .ourProcessCardInner {
+    transform: rotateX(180deg); 
+}
+
+.ourProcessCardFront, 
+.ourProcessCardBack {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.ourProcessCardBack {
+    transform: rotateX(180deg);
+}
+.ourProcessWrapper button{
+    height: 2.5rem;
+    border: none;
+    text-align: left;
+    color: rgba(2, 166, 220, 1);
+    padding: 2rem 0;
+    font-size: 1rem;
+    background: none;
+    cursor: pointer;
+}
+.ourProcessWrapper button i{
+    color: rgba(2, 166, 220, 1);
+}
+
+.footer{
+    width: 100%;
+    background-color: rgba(8, 4, 58, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer hr{
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(62, 62, 62, 1);
+}
+.footer p{
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    margin: 2rem 0;
+}
+.footerTableContainer{
+    width: 80rem;
+    min-height: 18.625rem;
+    height: auto;
+    margin: 3% 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footerSocialMediaContainer{
+    width: 16.563rem;
+}
+.footerSocialMediaContainer img{
+    width: 9.875rem;
+    height: 4.5rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+.footerSocialMediaContainer p{
+    font-weight: 400;
+    margin: 1rem 0 3rem 0;
+    color: rgba(238, 238, 238, 1);
+    max-width: 16.563rem;
+}
+.footerSocialMediaIconContainer img{
+    width: 2rem;
+    height: 2rem;
+    border: 0.25rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+.footerLinksMobileView{
+    display: none;
+}
+.quickLink.show{
+    display: block;
+}
+.serviceLink.show{
+    display: block;
+}
+.legalLink.show{
+    display: block;
+}
+.footerTableContainer table{
+    min-width: 39.813rem;
+}
+.footerTableContainer table th{
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+}
+.footerTableContainer table td{
+    font-weight: 400;
+    color: rgba(162, 162, 162, 1);
+    text-align: left;
+    padding-left: 0.75rem;
+    cursor: pointer;
+}
+.footerTableContainer table td:hover{
+    color: #eeeeee;
+}
+
+
+@media (max-width: 480px) {
+    body{
+        font-size: 15px;
+    }
+    .header{
+        max-height: auto;
+        flex-direction: column;
+    }
+    .headerWrapper > img{
+        display: block;
+    }
+    .headerMobileViewLinks{
+        width: 100%;
+        margin: 0.5rem 0 0 0;
+        text-align: left;
+    }
+    .headerMobileViewLinks > h4{
+        width: 100%;
+        padding: 0.75rem 0 0.75rem 1rem;
+        color: #454444;
+        background-color: #FFFFFF;
+    }
+    .headerMobileViewLinks > a{
+        display: none;
+        font-weight: 500;
+        text-decoration: none;
+        width: 100%;
+        padding: 0.5rem 0 0.5rem 3rem;
+        color: #272727;
+        background-color: #FFFFFF;
+    }
+    .headerWrapper section{
+        display: none;
+    }
+    .logo{
+        width: 8rem;
+        height: 4rem;
+        background-size: contain;
+        margin: 0.2rem 0;
+    }
+
+    .titleWrapper{
+        min-height: 8rem;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .titleWrapper h1{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .serviceWelcomeImgMobileView{
+        display: block;
+        width: 90%;
+        margin: 1rem 0 0 5%;
+    }
+    .serviceWelcomeImgDesktopView{
+        display: none;
+    }
+    .descriptionWrapper{
+        width: 100%;
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+    .contentWrapper{
+        width: 100%;
+        height: auto;
+    }
+    .contentWrapper h1{
+        font-size: 2.3rem;
+        width: 100%;
+        padding: 0 0 0 0.5rem;
+    }
+    .contentWrapper h2{
+        padding: 1rem 0  1rem 0.5rem;
+    }
+    .contentWrapper p{
+        padding: 0 0 0 0.5rem;
+    }
+    .contentWrapper h3{
+        padding: 1rem 0 1rem 0.5rem;
+    }
+
+    .ourProcessWrapper{
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+    .ourProcessWrapper h2{
+        padding-left: 0.5rem;
+    }
+    .ourProcessWrapper > button{
+        margin-left: 1rem;
+    }
+    .ourProcessCardContainer1, .ourProcessCardContainer2Wrapper{
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+    .ourProcessCardContainer1{
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .ourProcessCardContainer1 .ourProcessCard1{
+        margin-left: 8%;
+    }
+    .ourProcessCardContainer2Wrapper .ourProcessCard1{
+        margin-left: 5%;
+    }
+    .ourProcessCard1{
+        width: 90%;
+    }
+
+    .footerTableContainer{
+        width: 98%;
+        min-height: auto;
+        flex-direction: column;
+    }
+    .footerSocialMediaContainer{
+        display: none;
+    }
+    .footerTableDesktopView{
+        display: none;
+    }
+    .footerLinksMobileView{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerLinksMobileView > h4{
+        /* border-bottom: 0.3px solid #FFFFFF; */
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem 0;
+        cursor: pointer;
+    }
+    .footerLinksMobileView > a{
+        display: none;
+        font-weight: 500;
+        text-decoration: none;
+        color: #FFFFFF;
+        border-bottom: 1px solid #08043A;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+        background-color: #23214e;
+    }
+    .footerLinksMobileView > .footerSocialMediaIconContainer{
+        margin: 0.5rem 0 0 0;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footerLinksMobileView > .footerSocialMediaIconContainer img{
+        margin: 0;
+        justify-content: space-between;
+    }
+    .footer p{
+        width: 98%;
+        text-align: center;
+    }
+    .footerTableContainer table{
+        min-width: auto;
+    }
+}

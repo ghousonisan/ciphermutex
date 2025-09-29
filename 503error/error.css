@@ -19,7 +19,7 @@ body{
     backdrop-filter: blur(3px);      
     -webkit-backdrop-filter: blur(3px);
 }
-.header{
+ .header{
     height: 5rem;
     width: 100%;
     position: sticky;
@@ -33,7 +33,7 @@ body{
     z-index: 10;
 }
 .headerWrapper{
-    width: 84%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,9 +49,9 @@ body{
     background-size: cover;
 }
 .headerWrapper section{
-        width: 35rem;
+        width: 25rem;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         background: none;
 }
 .header section a{
@@ -59,6 +59,7 @@ body{
         text-decoration: none;
         color: #08043A;
         background: none;
+        text-underline-offset: 50%;
 }
 .errorContainer{
     display: flex;

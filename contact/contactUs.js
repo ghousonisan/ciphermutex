@@ -1,3 +1,14 @@
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_z9sck8c', 'template_3jrregy', this)
+      .then(function() {
+        alert("Message sent successfully!");
+      }, function(error) {
+        alert("Failed to send. Error: " + JSON.stringify(error));
+      });
+});
+
 function displayLinks(className){
   let links = document.querySelectorAll('.'+className);
 
