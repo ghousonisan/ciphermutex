@@ -224,7 +224,7 @@ body{
 }
 .aboutUsWrapper{
     width: 80rem;
-    min-height: 25rem;
+    min-height: 35rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -236,7 +236,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
-.aboutUs h3{
+.aboutUs h2{
     font-weight: 500;
     font-size: 0.75rem;
     color: rgba(2, 166, 220, 1);
@@ -253,7 +253,7 @@ body{
 }
 .aboutUsLogoImgContainer{
     width: 40rem;
-    height: 15.75rem;
+    height: 21.75rem;
     border-radius: 2.5rem;
     background-color: rgba(255, 255, 255, 0.3);
     background-image: url(assets/WhatsApp_Image_2025-09-10_at_17.37.23_33feba38-removebg-preview.png);
@@ -468,7 +468,7 @@ body{
     transition: transform .2s; 
 }
 .industriesWeWorkWithCard:hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
     box-shadow: 0 0 0.5rem 0 black;
 }
 .industriesWeWorkWithCard img{
@@ -506,9 +506,6 @@ body{
     cursor: default;
     z-index: 1;
     transition: transform .2s;
-}
-.industriesWeWorkWithCompanyCard:hover{
-    transform: scale(0.8);
 }
 .industriesWeWorkWithCompanyCard::before{
     content: '';
@@ -870,15 +867,29 @@ body{
         width: 21.438rem;
         margin-top: 2rem;
     }
+    /* ==================== ABOUT US ================================ */
     .aboutUsWrapper{
-        width: 98%;
-        margin-left: 1%;
+        width: 100%;
+        min-height: 25rem;
+    }
+    .aboutUs *{
+        padding: 0 0.75rem;
     }
     .aboutUs a{
         font-size: 14px;
     }
     .aboutUsLogoImgContainer{
         display: none;
+    }
+/* ===================== SERVICE ============================ */
+    .servicesWrapper{
+        width: 100%;
+    }
+    .servicesWrapper > h2{
+        padding: 0 0.75rem;
+    }
+    .servicesWrapper >p{
+        padding: 0.5rem 0.5rem 1rem 0.75rem;
     }
     .servicesCardContainer{
         grid-template-columns: 1fr;
@@ -892,6 +903,9 @@ body{
         max-width: 92%;
         padding-left: 4%;
     }
+    .servicesCard1 button, .servicesCard2 button {
+        font-size: 0.9rem;
+    }
     .servicesCard1 button i, .servicesCard2 button i{
         font-size: 0.75rem;
     }
@@ -901,13 +915,15 @@ body{
     .servicesContainer h2{
         margin-top: 2rem;
     }
-
-    .industriesWeWorkWithContainer h2{
-        margin-top: 1rem;
+/* ==================== INDUSTRIES WE WORK WITH ======================================== */
+    .industriesWeWorkWithWrapper{
+        width: 100%;
     }
-    .industriesWeWorkWithContainer h2, .industriesWeWorkWithContainer p, .servicesContainer p, .servicesContainer h2{
-        width: 98%;
-        margin-left: 1%;
+    .industriesWeWorkWithWrapper > h2{
+        padding: 1rem 0.5rem 0.5rem 0.75rem;
+    }
+    .industriesWeWorkWithWrapper > p{
+        padding: 0 0.5rem 0 0.75rem;
     }
     .industriesWeWorkWithCardContainer{
         grid-template-columns: 1fr;
