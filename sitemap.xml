@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://ciphermutex.com/</loc>
+  <lastmod>2025-10-08T12:18:52+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://ciphermutex.com/about/aboutUs.html</loc>
+  <lastmod>2025-10-07T07:48:37+00:00</lastmod>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://ciphermutex.com/service/webDevelopment.html</loc>
+  <lastmod>2025-10-07T07:48:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ciphermutex.com/service/appDevelopment.html</loc>
+  <lastmod>2025-10-07T07:48:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ciphermutex.com/service/uxDesign.html</loc>
+  <lastmod>2025-10-07T07:48:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ciphermutex.com/service/graphicDesign.html</loc>
+  <lastmod>2025-10-07T07:48:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ciphermutex.com/service/digitalMarketing.html</loc>
+  <lastmod>2025-10-07T07:48:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ciphermutex.com/service/aiAutomation.html</loc>
+  <lastmod>2025-10-07T07:48:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ciphermutex.com/service/whatsappCRM.html</loc>
+  <lastmod>2025-10-07T07:48:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ciphermutex.com/contact/contactUs.html</loc>
+  <lastmod>2025-10-07T07:48:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ciphermutex.com/index.html</loc>
+  <lastmod>2025-10-08T12:18:52+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://ciphermutex.com/legal/privacyPolicy.html</loc>
+  <lastmod>2025-10-08T12:18:52+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://ciphermutex.com/legal/termsOfService.html</loc>
+  <lastmod>2025-10-08T12:18:52+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+
+
+</urlset>
