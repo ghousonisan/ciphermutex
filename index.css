@@ -19,6 +19,9 @@ body{
     background-color: #08043A;
     font-size: 16px;
 }
+.noNeed{
+    display: none;
+}
  .header{
     max-height: 5rem;
     width: 100%;
@@ -69,7 +72,7 @@ body{
         background: none;
 }
 
-.header section a{
+.headerWrapper > section > a{
         display: block;
         text-decoration: none;
         color: #6e6e6e;
@@ -80,6 +83,11 @@ body{
 .header section > a:hover{
     transform: scale(1.1);
     color: #2e2e2e;
+}
+.headerWrapper > section > a.currentPageIndication{
+    text-decoration: underline;
+    color: #08043A;
+    font-weight: 500;
 }
 .dropdown button{
     font-size: inherit;
